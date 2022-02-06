@@ -1,0 +1,2 @@
+host1 ansible_host=127.0.0.1 ansible_user=vagrant ansible_port=2222 ansible_ssh_private_key_file=/Users/ioannis/Desktop/blog/ansible_intro/.vagrant/machines/host1/virtualbox/private_key
+host2 ansible_host=127.0.0.1 ansible_user=vagrant ansible_port=2200 ansible_ssh_private_key_file=/Users/ioannis/Desktop/blog/ansible_intro/.vagrant/machines/host2/virtualbox/private_key
