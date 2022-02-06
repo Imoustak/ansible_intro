@@ -1,0 +1,20 @@
+---
+- name: Intro to Ansible Playbooks
+  hosts: all
+
+  tasks:
+  - name: Copy file with owner and permissions
+    ansible.builtin.copy:
+      src: /Users/ioannis/Desktop/blog/ansible_intro/hosts
+      dest: /tmp/hosts_backup
+      mode: '0644'
+  - name: Add the user 'bob'
+    ansible.builtin.user:
+      name: bob
+    become: yes
+    become_method: sudo
+  - name: Upgrade all apt packages
+    apt:
+      force_apt_get: yes
+      upgrade: dist
+    become: yes
